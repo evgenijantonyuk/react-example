@@ -1,0 +1,64 @@
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+
+.modalContent {
+    box-shadow: 0px 0px 3px 1px #000000;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modalContent,
+.modalForm{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.modalContent.active,
+.modalForm.active {
+    transform: scale(1);
+}
+
+.modalForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modalForm button {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.modalInput,
+.modalTextarea {
+    padding: 5px 10px;
+    width: 250px;
+    background-color: transparent;
+
+}
