@@ -1,0 +1,12 @@
+
+.textContent {
+    padding: 20px;
+}
+
+.textContentGrid {
+    display: grid;
+    grid-template-columns:  3fr 2fr;
+    gap: 30px;
+    max-width: 90vw;
+    margin-bottom: 30px;
+}

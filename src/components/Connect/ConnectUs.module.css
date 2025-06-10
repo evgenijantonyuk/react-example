@@ -26,3 +26,8 @@ button {
     border-radius: 5px;
     padding: 5px 10px;
 }
+
+.active {
+    border: 1px solid #ffffff;
+    background-color: #0651f1;
+}
